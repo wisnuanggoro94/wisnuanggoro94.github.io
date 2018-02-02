@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pendaftaran</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<table border="1" cellspacing="20" cellpadding="80">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		var tanda = 'o';
+		$(function() {
+			$('td').on('click', function(){
+				$(this).text(tanda);
+				if(tanda =='o')
+					tanda = 'x';
+				else
+					tanda ='o';
+			})
+		})
+	</script>
+</body>
+</html>

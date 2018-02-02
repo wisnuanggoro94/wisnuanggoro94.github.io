@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pendaftaran</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<table border="1" cellspacing="20" cellpadding="80">
+		<tr>
+        	<td onclick="tandai(this)"></td>
+			<td onclick="tandai(this)"></td>
+			<td onclick="tandai(this)"></td>
+		</tr>
+  		<tr>
+    		<td onclick="tandai(this)"></td>
+    		<td onclick="tandai(this)"></td>
+    		<td onclick="tandai(this)"></td>
+      </tr>
+      <tr>
+        	<td onclick="tandai(this)"></td>
+			<td onclick="tandai(this)"></td>
+			<td onclick="tandai(this)"></td>
+		</tr>
+	</table>
+
+<script>
+	var tanda='o'
+	function tandai(elemen) {
+		elemen.innerHTML=tanda;
+		if (tanda=='o')
+			tanda='x';
+		else
+			tanda='o';
+	}
+</script>
+</body>
+</html>
